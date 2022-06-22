@@ -25,6 +25,7 @@ namespace TestsSuperBASIC
 			lib.AddFunction(new SuperBASIC.Functions.Goto(), 1, "GOTO");
 			lib.AddFunction(new SuperBASIC.Functions.Pi(), 0, "PI");
 			lib.AddFunction(new SuperBASIC.Functions.Euler(), 0, "EULER");
+			lib.AddFunction(new SuperBASIC.Functions.Arcsin(), 1, "ARCSIN");
 			Runtime r = new Runtime(lib);
 			r.OpenFile(Directory.GetCurrentDirectory() + "\\CasDeTest\\PrebuiltTest-TestA.basic");
 			r.Run();
