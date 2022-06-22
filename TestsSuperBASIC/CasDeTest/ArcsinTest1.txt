@@ -1,0 +1,2 @@
+﻿ARCSIN 0
+PRINT $

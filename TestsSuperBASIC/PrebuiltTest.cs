@@ -25,6 +25,11 @@ namespace TestsSuperBASIC
 			lib.AddFunction(new SuperBASIC.Functions.Goto(), 1, "GOTO");
 			lib.AddFunction(new SuperBASIC.Functions.Pi(), 0, "PI");
 			lib.AddFunction(new SuperBASIC.Functions.Euler(), 0, "EULER");
+<<<<<<< HEAD
+			lib.AddFunction(new SuperBASIC.Functions.Arcsin(), 1, "ARCSIN");
+=======
+			lib.AddFunction(new SuperBASIC.Functions.LinearEquation(), 3, "LINEAR");
+>>>>>>> SOLVE_LIEAR
 			Runtime r = new Runtime(lib);
 			r.OpenFile(Directory.GetCurrentDirectory() + "\\CasDeTest\\PrebuiltTest-TestA.basic");
 			r.Run();

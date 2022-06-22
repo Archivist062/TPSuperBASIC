@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestsSuperBASIC.Mock
 {
-    class MockPrint : SuperBASIC.IFunction
+   public class MockPrint : SuperBASIC.IFunction
     {
         public List<float> output = new List<float>();
 
