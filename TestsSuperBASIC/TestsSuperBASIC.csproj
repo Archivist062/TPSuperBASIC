@@ -18,7 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="CasDeTest\ArcsinTest1.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="CasDeTest\PrebuiltTest-TestA.basic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="CasDeTest\RemTest1.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
