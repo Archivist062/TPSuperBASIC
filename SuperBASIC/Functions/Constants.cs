@@ -18,4 +18,12 @@ namespace SuperBASIC.Functions
 			return (float)Math.E;
 		}
 	}
+	public class GRatio : IFunction
+	{
+		static readonly float value = (1f + (float)Math.Sqrt(5)) / 2f;
+		float IFunction.Apply(List<BasicNumber> arguments)
+		{
+			return value;
+		}
+	}
 }
