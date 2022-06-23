@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SuperBASIC.Functions
@@ -16,6 +17,15 @@ namespace SuperBASIC.Functions
 			return value;
 		}
 
+		public static IEnumerable<float> ValuesBetween(short start, short last)
+        {
+			
+			return memory.Skip(start).Take(last - start + 1);
+			/*return Enumerable
+				.Range(start, last - start + 1)
+				.Cast<short>()
+				.Select(x => MemoryGet(x));*/
+        }
 
 		[Serializable]
 		public class BadMemoryAccess : Exception
